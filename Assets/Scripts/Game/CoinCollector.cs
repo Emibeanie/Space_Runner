@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class BatteryCollector : MonoBehaviour
+public class CoinCollector : MonoBehaviour
 {
 
 
@@ -15,7 +15,7 @@ public class BatteryCollector : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "player")
+        if (other.tag == "Player")
         {
             PlayerManager.CoinNum += 1;
             Debug.Log("coins:" + PlayerManager.CoinNum);
